@@ -216,6 +216,7 @@ input::-webkit-input-placeholder {
   margin: 20px;
 }
 
+
 /* Rotates project in portfolio on hover. Just to make little fancier*/
 .box:hover {
   transform: rotate(-10deg);
@@ -253,13 +254,23 @@ input::-webkit-input-placeholder {
 
 /*browser size*/
 @media screen and (max-width: 980px){
+  #header-container{
+    width: 95%;
+    justify-content: normal;
+  }
   #content{
-    position: relative;
-    width: 60%;
+    width: 95%;
   }
   #right-content{
-    position: relative;
-    width: 40%;
+    width: 95%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  #head-logo{
+    background-color: salmon;
+    font: white;
+    border-left: 10px solid crimson;
+    width: 45%;
   }
   p{
     clear: both;
@@ -280,7 +291,12 @@ input::-webkit-input-placeholder {
   #head-logo{
     background-color: antiquewhite;
     border-left: 10px solid lightblue;
-    width: 100%;
+    width: 45%;
+
+  }
+  #head-container, {
+    width: 768px;
+    justify-content: normal;
   }
   aside{
     float: left;
@@ -289,13 +305,19 @@ input::-webkit-input-placeholder {
   p{
     clear: none;
   }
-  .section_grey_line{
-    width: 330px;
-    height: 330px;
-  }
+  
 }
 /*landscape phone size*/
 @media screen and (max-width: 640px){
+
+.main-body {
+    margin-left: 10px;
+    width: 95%;
+}
+.box {
+  width: 95%;
+  height: 95%;
+}
   #content{
     width: 578px;
   }
@@ -309,7 +331,11 @@ input::-webkit-input-placeholder {
     margin-left: 0px;
     margin-bottom: -20px;
   }
-  nav{
+
+  #portfolio_img{
+    width: 100%;
+  }
+  .nav{
     clear: both;
     float: none;
     text-align: center;
@@ -323,22 +349,12 @@ input::-webkit-input-placeholder {
     padding:0;
     margin:0;
   }
-  section, aside{
-    width: 578px;
-    margin-left: 15px;
-  }
-  div.img-content{
+ 
+  #header{
     width: 578px;
   }
-  div.bar{
-    height: 55px;
-    padding-top: 25px;
-  }
-  header{
-    width: 640px;
-  }
-  footer{
-    width: 640px;
+  #footer{
+    width: 578px;
   }
 }
 
