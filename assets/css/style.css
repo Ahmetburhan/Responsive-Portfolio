@@ -49,7 +49,7 @@ header {
    	border-style: solid;
     text-align: justify;
     padding: 10px 20px 10px 25px;
-    margin-bottom: 200px
+    margin-bottom: 20px
 }
 
 #right-content{
@@ -229,14 +229,15 @@ input::-webkit-input-placeholder {
 }
 
   footer {
+            clear: both;
             width: 100%;
             height: 100px;
             top: auto;
         	  right: 0;
         	  bottom: 0;
         	  left: 0;
-            position: fixed;         
-            text-align: center;
+/*            position: fixed;         
+*/            text-align: center;
             font-size: 1.6em;
             border-radius: 10px;
             background-color: pink;
@@ -247,3 +248,98 @@ input::-webkit-input-placeholder {
   color: #ffffff;
   font-weight: bolder;
 }
+
+
+
+/*browser size*/
+@media screen and (max-width: 980px){
+  #content{
+    position: relative;
+    width: 60%;
+  }
+  #right-content{
+    position: relative;
+    width: 40%;
+  }
+  p{
+    clear: both;
+  }
+  
+}
+/*tablet size*/
+@media screen and (max-width: 768px) {
+  #content{
+    width: 650px;
+  }
+  #right-content{
+    margin-bottom: auto;
+    width: 650px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  #head-logo{
+    background-color: antiquewhite;
+    border-left: 10px solid lightblue;
+    width: 100%;
+  }
+  aside{
+    float: left;
+    width: 768px;
+  }
+  p{
+    clear: none;
+  }
+  .section_grey_line{
+    width: 330px;
+    height: 330px;
+  }
+}
+/*landscape phone size*/
+@media screen and (max-width: 640px){
+  #content{
+    width: 578px;
+  }
+  #head-logo{
+    width: 578px;
+    text-align: center;
+  }
+
+  #right-content{
+    width: 578px;
+    margin-left: 0px;
+    margin-bottom: -20px;
+  }
+  nav{
+    clear: both;
+    float: none;
+    text-align: center;
+    padding: 15px 0 15px 0;
+  }
+  a{
+    width: 32%;
+    text-align: center;
+  }
+  .nav{
+    padding:0;
+    margin:0;
+  }
+  section, aside{
+    width: 578px;
+    margin-left: 15px;
+  }
+  div.img-content{
+    width: 578px;
+  }
+  div.bar{
+    height: 55px;
+    padding-top: 25px;
+  }
+  header{
+    width: 640px;
+  }
+  footer{
+    width: 640px;
+  }
+}
+
+

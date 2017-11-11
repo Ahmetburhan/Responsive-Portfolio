@@ -1,2 +1,4 @@
-# Basic-Portfolio
-Basic-Portfolio Page Created
+# Responsive-Portfolio
+Responsive-Portfolio Page Created
+
+Resize the screen see the magic!
