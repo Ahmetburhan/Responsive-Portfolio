@@ -256,7 +256,7 @@ input::-webkit-input-placeholder {
 @media screen and (max-width: 980px){
   #header-container{
     width: 95%;
-    justify-content: normal;
+    justify-content: space-between;
   }
   #content{
     width: 95%;
@@ -294,13 +294,14 @@ input::-webkit-input-placeholder {
     width: 45%;
 
   }
-  #head-container, {
-    width: 768px;
+  #header-container, {
+    width: 698px;
     justify-content: normal;
+    display: inline-block;
   }
   aside{
     float: left;
-    width: 768px;
+    width: 698px;
   }
   p{
     clear: none;
@@ -312,8 +313,16 @@ input::-webkit-input-placeholder {
 
 .main-body {
     margin-left: 10px;
-    width: 95%;
+    width: 578%;
 }
+
+#header-container, {
+    width: 100%;
+    justify-content: normal;
+    display: contents;
+  }
+
+
 .box {
   width: 95%;
   height: 95%;
@@ -332,10 +341,10 @@ input::-webkit-input-placeholder {
     margin-bottom: -20px;
   }
 
-  #portfolio_img{
+  #cont2{
     width: 100%;
   }
-  .nav{
+  nav{
     clear: both;
     float: none;
     text-align: center;
@@ -345,15 +354,12 @@ input::-webkit-input-placeholder {
     width: 32%;
     text-align: center;
   }
-  .nav{
-    padding:0;
-    margin:0;
-  }
+
  
-  #header{
+  header{
     width: 578px;
   }
-  #footer{
+  footer{
     width: 578px;
   }
 }
